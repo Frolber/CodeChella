@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
          <GlobalStyle />
          <Menu />
+         <body>
          <BannerApresenta />
 
          <Routes>
@@ -23,7 +24,9 @@ function App() {
             <Route path="/ingresso" element={ <Ingresso />} />
             <Route path="*" element={<div>Página não encontrada :F</div>} />
          </Routes>
+         </body>
       </BrowserRouter>
+      
    );
 }
 

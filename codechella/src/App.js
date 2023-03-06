@@ -7,13 +7,14 @@ import Inicio from "./Paginas/Inicio";
 import MapaDeSetores from "./Paginas/MapaDeSetores";
 import { GlobalStyle } from "./Componentes/GlobalStyle.js";
 import BannerApresenta from "./Componentes/Banner";
+import { CorpoSite } from "./Componentes/UI/CorpoSite";
 
 function App() {
    return (
       <BrowserRouter>
          <GlobalStyle />
          <Menu />
-         <body>
+         <CorpoSite>
          <BannerApresenta />
 
          <Routes>
@@ -24,7 +25,7 @@ function App() {
             <Route path="/ingresso" element={ <Ingresso />} />
             <Route path="*" element={<div>Página não encontrada :F</div>} />
          </Routes>
-         </body>
+         </CorpoSite>
       </BrowserRouter>
       
    );

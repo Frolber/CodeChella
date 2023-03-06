@@ -5,12 +5,14 @@ const MenuLinks = styled.div`
    display: flex;
    gap: 32px;
    margin-left: 2%;
+   align-items: center;
 
    @media screen and (max-width: 800px) {
       margin-left: 0;
    }
 
    @media screen and (max-width: 520px) {
+      border-top: 3px solid #FFF;
       flex-flow: column nowrap;
       background-color: ${corPrimariaVerao};
       padding: 1rem;

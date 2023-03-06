@@ -6,12 +6,14 @@ import Ingresso from "./Paginas/Ingresso";
 import Inicio from "./Paginas/Inicio";
 import MapaDeSetores from "./Paginas/MapaDeSetores";
 import { GlobalStyle } from "./Componentes/GlobalStyle.js";
+import BannerApresenta from "./Componentes/Banner";
 
 function App() {
    return (
       <BrowserRouter>
          <GlobalStyle />
          <Menu />
+         <BannerApresenta />
 
          <Routes>
             <Route path="/" element={ <Inicio />} />

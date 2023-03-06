@@ -12,7 +12,7 @@ const StyledHeader = styled.nav`
    padding: 32px 8.3% ;
    background-color: ${corPrimariaVerao};
 
-   @media screen and (max-width: 800px) {
+   @media screen and (max-width: 900px) {
       flex-direction: column;
       gap: 32px;
       padding: 32px 5%;

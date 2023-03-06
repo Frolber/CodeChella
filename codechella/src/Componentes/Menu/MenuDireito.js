@@ -14,6 +14,7 @@ const MenuLinks = styled.div`
       flex-flow: column nowrap;
       background-color: ${corPrimariaVerao};
       padding: 1rem;
+      gap: 0;
       position: fixed;
       transform: ${({ abrir }) =>
          abrir ? "translateX(0)" : "translateX(100%)"};
@@ -30,14 +31,33 @@ const LinkMenu = styled.a`
    color: #fff;
    text-decoration: none;
    text-align: center;
+
+   @media screen and (max-width: 520px) {
+      padding: 1rem 0;
+   }
 `;
+
+const DetalheLinkMenu = styled.div`
+   display: none;
+
+   @media screen and (max-width: 520px) {
+      height: 1px;
+      background-color: white;
+      width: 100%;
+      display: block;
+   }
+
+`
 
 const MenuDireito = ({ abrir }) => {
    return (
       <MenuLinks abrir={abrir}>
          <LinkMenu href="/experiencia">A experiência</LinkMenu>
+         <DetalheLinkMenu />
          <LinkMenu href="/mapadesetores">Mapa de Setores</LinkMenu>
+         <DetalheLinkMenu />
          <LinkMenu href="/Informacoes">Informações</LinkMenu>
+         <DetalheLinkMenu />
          <LinkMenu href="/Ingresso">Ingresso</LinkMenu>
       </MenuLinks>
    );

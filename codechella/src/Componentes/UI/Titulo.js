@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import {corTextoVerao} from '../UI/Variaveis.js';
+import {corTextoVerao, fonteTitulo} from '../UI/Variaveis.js';
 
 export const Titulo = styled.h1`
    color: ${corTextoVerao};
+   font-family: ${fonteTitulo};
    font-size: 3.2rem;
    line-height: 4rem;
    text-align: center;

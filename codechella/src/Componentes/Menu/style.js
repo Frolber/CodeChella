@@ -6,9 +6,6 @@ import { corPrimariaVerao } from "../UI/Variaveis.js";
 export const StyledBurger = styled.div`
    width: 2rem;
    height: 2rem;
-   position: fixed;
-   top: 50px;
-   right: 5%;
    display: none;
 
    @media screen and (max-width: 520px) {
@@ -43,12 +40,19 @@ export const StyledBurger = styled.div`
 
 //Estilos do index.
 
-export const StyledHeader = styled.nav`
+export const Cabecalho = styled.header`
+   background-color: ${corPrimariaVerao};
+   display: flex;
+   justify-content: center;
+`
+
+export const MenuEstilizado = styled.nav`
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 32px 8.3%;
-   background-color: ${corPrimariaVerao};
+
+   max-width: 1200px;
 
    @media screen and (max-width: 900px) {
       flex-direction: column;
@@ -58,6 +62,7 @@ export const StyledHeader = styled.nav`
 
    @media screen and (max-width: 520px) {
       flex-direction: row;
+      width: 100%;
    }
 `;
 

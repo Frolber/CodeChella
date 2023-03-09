@@ -1,12 +1,12 @@
-import bannerVerao from "../../Assets/bannerVerao.png";
+
 import { Titulo } from "../UI/Titulo";
 import { BannerFundo, SloganBanner } from "./style.js";
 
-const BannerApresenta = () => {
+const BannerApresenta = (props) => {
    return (
-      <BannerFundo imagemBanner={bannerVerao}>
+      <BannerFundo linkImagem={props.imagemBanner}>
          <SloganBanner>
-            <Titulo>Boas-vindas ao #CodeChella2023!</Titulo>
+            <Titulo className="tituloBanner">{props.titulo}</Titulo>
          </SloganBanner>
       </BannerFundo>
    );
